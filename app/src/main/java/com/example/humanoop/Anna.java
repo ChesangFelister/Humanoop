@@ -15,31 +15,43 @@ public class Anna  extends Human {
         this.height = height;
     }
 
+    public int getHeight() {
+        return height;
+    }
+
+    public void setHeight(int height) {
+        this.height = height;
+    }
+
     @Override
     public void eat() {
         super.eat();
-        weight=weight +2;
-        Log.d("Anna"," I am eating and i am now "+ weight +" " +"kg");
+    int weight=  getWeight();
+      weight+=2;
+      setWeight(weight);
+
     }
 
     @Override
-    public int birthday() {
+    public void birthday() {
+       int age= getAge();
         age=age+4;
-        Log.d("Anna","Happy birthday you are now "+age+" "+"years");
-        return age;
-//        super.birthday();
-    }
+        setAge(age);
+
+
+//       super.birthday();
+  }
 }
 
-//    public int Height(int Height) {
-//        height=height;
-//        return Height;
-//    }
-//
-//    public void setHeightt (int height){
-//        this.height=height;
-//    }
-//    public void eat(){
+////    public int Height(int Height) {
+////        height=height;
+////        return Height;
+////    }
+////
+////    public void setHeightt (int height){
+////        this.height=height;
+////    }
+////    public void eat(){
 
 
 

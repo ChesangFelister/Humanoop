@@ -27,21 +27,24 @@ public class MainActivity extends AppCompatActivity {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction(
                                 "Action", null).show();
-            }
-        });
+           }
+      });
         Human one=new Human("mana",40,70);
         Human two=new Human("george",35,59);
         two.sleep();
         one.eat();
         two.sleep(6);
-        Log.d("Human","Happy birthday you are " +two.getAge() +" "+ "years");
+       Log.d("Human","Happy birthday you are " +two.getAge() +" "+ "years");
         two.birthday();
         two.speak("hello");
-        Anna tan=new Anna("yuuj",7,40,4);
+      Anna tan=new Anna("yuuj",7,40,4);
+        Log.d("Anna"," I am eating and i am now "+ tan.getWeight()+"years");
         tan.eat();
-        tan.sleep();
-        tan.birthday();
-//        tan.getAge();
+
+      tan.sleep();
+       tan.birthday();
+        Log.d("Anna","Happy birthday you are now "+tan.getAge()+" "+"years");
+      tan.getAge();
 
 
     }
